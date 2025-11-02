@@ -48,4 +48,9 @@ public class FoodController {
         foodRepository.deleteById(id);
         return "Food deleted with id " + id;
     }
+    @GetMapping("/")
+    public String home() {
+        return "WELCOME Nigga! Visit /foods";
+    }
+
 }
