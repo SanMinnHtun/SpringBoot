@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+</head>
+<body>
+<h1>Contact Us</h1>
+<p>If you have any questions, please fill out the form below:</p>
+
+<form action="#" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"></textarea><br><br>
+
+    <button type="submit">Send</button>
+</form>
+
+<p><a th:href="@{/}">Back to Home</a></p>
+</body>
+</html>
